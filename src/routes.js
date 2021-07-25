@@ -7,6 +7,8 @@ import ViewProduto from './pages/Produto/ViewProduto';
 
 import Clientes from './pages/Cliente/Clientes';
 import FormularioCadastroCliente from './pages/Cliente/FormularioCadastro';
+import ViewCliente from './pages/Cliente/ViewCliente';
+
 import SideBar from './components/SideMenu/SideMenu';
 
 export default function Router () {
@@ -22,6 +24,7 @@ export default function Router () {
 
                 <Route exact path="/clientes" component={ Clientes } />
                 <Route exact path="/clientes/cadastrar" component={ FormularioCadastroCliente } />
+                <Route exact path="/clientes/:codigo" component={ ViewCliente } />
                 
                 <Route exact path="/config" />
             </Switch>

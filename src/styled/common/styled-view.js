@@ -37,7 +37,7 @@ export const Heading2 = styled.h2`
     font-size: 15pt;
 `;
 
-export const ProductInfo = styled.div`
+export const MainInfo = styled.div`
     float: right;
     width: 500px;
     display: flex;
@@ -46,7 +46,7 @@ export const ProductInfo = styled.div`
     align-items: center;
 `; 
 
-export const ProdTitle = styled.h2`
+export const Title = styled.h2`
     color: ${palette.DEFAULT_BKG_COLOR};
     font-family: ${palette.DEFAULT_FONT};
     font-size: 30pt;
@@ -69,7 +69,7 @@ export const ProdDescriptionParagrah = styled.p`
     margin: auto;
 `;
 
-export const ProdInfoLabel = styled.h3`
+export const InfoLabel = styled.h3`
     font-family: ${palette.DEFAULT_FONT};
     color: ${palette.DEFAULT_BKG_COLOR};
     font-size: 15pt;

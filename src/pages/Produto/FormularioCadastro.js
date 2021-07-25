@@ -4,7 +4,6 @@ import * as S from '../../styled/common/styled-form';
 import { v4 as uuid } from 'uuid';
 
 export default function FormularioCadastro () {
-
     const [ description, setDescription ] = useState('');
     const [ local, setLocal ] = useState('');
     const [ qtd, setQtd ] = useState('');

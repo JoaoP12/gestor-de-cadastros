@@ -5,7 +5,7 @@ import * as S from '../../styled/common/styled-view';
 export default function ViewProduto () {
     const { codigo } = useParams();
     const produtos = JSON.parse(localStorage.getItem("produtos")) || {};
-    const hist = useHistory();
+    const history = useHistory();
     if (produtos === {} || produtos[codigo] === undefined){
         return (
             <S.Main>
@@ -20,7 +20,7 @@ export default function ViewProduto () {
             delete produtos[codigo];
             localStorage.setItem("produtos", JSON.stringify(produtos));
             alert("Produto deletado com sucesso!");
-            hist.push('/produtos');
+            history.push('/produtos');
         } else {
             alert("Exclusão abortada!");
         }
@@ -33,20 +33,19 @@ export default function ViewProduto () {
                     <ProdImg link={produto.link} />
                 }
             </S.ProductBkg>
-            <S.ProductInfo>
-                <S.ProdTitle>{produto.title}</S.ProdTitle>
+            <S.MainInfo>
+                <S.Title>{produto.title}</S.Title>
                 <S.ProdDescriptionSection>
                     <S.ProdDescriptionParagrah>{produto.desc}</S.ProdDescriptionParagrah>
                 </S.ProdDescriptionSection>
-                <S.ProdInfoLabel>Estoque: {produto.qtd}</S.ProdInfoLabel>
-                <S.ProdInfoLabel>Localização: {produto.local}</S.ProdInfoLabel>
-                <S.ProdInfoLabel>Preço: R$ {produto.price}</S.ProdInfoLabel>
-                <S.ProdInfoLabel>Custo: R$ {produto.cost}</S.ProdInfoLabel>
+                <S.InfoLabel>Estoque: {produto.qtd}</S.InfoLabel>
+                <S.InfoLabel>Localização: {produto.local}</S.InfoLabel>
+                <S.InfoLabel>Preço: R$ {produto.price}</S.InfoLabel>
+                <S.InfoLabel>Custo: R$ {produto.cost}</S.InfoLabel>
                 <S.ButtonsDiv>
                     <S.DeleteButton onClick={deleteProduct}>Excluir</S.DeleteButton>
-                    <S.EditButton>Alterar</S.EditButton>
                 </S.ButtonsDiv>
-            </S.ProductInfo>
+            </S.MainInfo>
         </S.Main>
     );
 }

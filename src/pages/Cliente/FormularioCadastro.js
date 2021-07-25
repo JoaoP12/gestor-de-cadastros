@@ -49,7 +49,7 @@ export default function FormularioCadastro () {
 
         localStorage.setItem("clientes", JSON.stringify(clientes));
         alert("Cliente cadastrado com sucesso!");
-        history.push(`/produtos/${codigo_cliente}`);
+        history.push(`/clientes/${codigo_cliente}`);
     }
     
     return (

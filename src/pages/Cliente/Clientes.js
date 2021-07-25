@@ -32,7 +32,7 @@ export default function Clientes () {
                         {
                             Object.keys(clientes).map(codigo => {
                                 return (
-                                    <tr key={codigo}>
+                                    <tr key={codigo} onClick={ () => history.push('/clientes/'+codigo) }>
                                         <common.Cell width="30px">{counter++}</common.Cell>
                                         <common.Cell width="300px">{clientes[codigo].nome}</common.Cell>
                                         <common.Cell width="50px">{ clientes[codigo].tipo === "PF" ? "Física" : "Jurídica" }</common.Cell>
