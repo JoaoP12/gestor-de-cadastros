@@ -50,11 +50,11 @@ Passando o mouse por cima de cada cadastro na tabela, a cor ficará mais escura 
 
 ![image](https://github.com/JoaoP12/gestor-de-cadastros/blob/master/examples/lista_clientes.png)
 
-![image](https://github.com/JoaoP12/gestor-de-cadastros/blob/master/examples/cadastro_cliente.png)
+![image](https://github.com/JoaoP12/gestor-de-cadastros/blob/master/examples/cadastro_cliente.PNG)
 
 Obviamente, também é possível cadastrar produtos e clientes clicando no botão "Cadastrar (Produto ou Cliente)" de cada tela. Depois de clicar, um formulário será carregado. A imagem abaixo mostra o formulário de cadastro de clientes, mas o formulário de produtos é muito similar:
 
-![image](https://github.com/JoaoP12/gestor-de-cadastros/blob/master/examples/cadastrar_cliente.png)
+![image](https://github.com/JoaoP12/gestor-de-cadastros/blob/master/examples/cadastrar_cliente.PNG)
 
 E então o usuário só tem que preencher os campos conforme as informações de seu cliente/produto e enviar.
 
