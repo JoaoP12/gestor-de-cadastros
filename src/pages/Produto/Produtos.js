@@ -27,7 +27,7 @@ export default function Produtos () {
             <common.Header>
                 <common.PageTitle>Produtos</common.PageTitle>
                 <common.Search>
-                    <common.SearchField type="text" value={queryString} onChange={ e => setQueryString(e.target.value) }
+                    <common.SearchField type="text" value={ queryString } onChange={ e => setQueryString(e.target.value) }
                         placeholder="Procure pela descrição do produto" />
                     <common.SearchButton onClick={handleSearch} />
                 </common.Search>
